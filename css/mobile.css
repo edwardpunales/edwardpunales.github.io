@@ -1,3 +1,5 @@
+@media (max-width: 320px) {
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400);
 
 @import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
@@ -6,23 +8,22 @@ body {
   background: url("../img/newspaper.png");
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: #222;
-
 }
 
-a,
-a:visited {
-  color: rgb(25,95,155);
-}
-
-a:hover {
-  color: rgb(218,29,54);
+#container {
+  margin: 0 auto;
+  width: 230px;
+  border: 2px solid #222;
+  Padding: 1.5em;
+  float: left;
+  background: #fff;
+  overflow:  auto;
 }
 
 nav {
   margin-top: 2em;
-  margin-bottom: 2em;
 }
 
 nav ul {
@@ -31,8 +32,8 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
-  margin-right: 2em;
+  margin-bottom: 3em;
+  display: block;
 }
 
 nav ul li > a,
@@ -47,22 +48,8 @@ nav ul li > a:visited {
 nav ul li > a:hover,
 .active {
   background: rgba(0,0,0,1.0);
-  border: 1px solid rgba(255,255,255,0.0);
+  border: none;
   color: #fff;
-}
-
-
-#container {
-  margin: 0 auto;
-  width: 450px;
-  border: 1px solid #222;
-  Padding: 0.5em;
-  background: #fff;
-  overflow:  auto;
-}
-
-section {
-  margin-bottom: 1em;
 }
 
 .clearfix {
@@ -82,10 +69,21 @@ h2 {
 }
 
 p {
-  margin: 0;
   line-height: 1.5;
 }
 
 img {
-  border: 1px solid #222;
+  border: 2px solid #222;
+  float: center;
+  height:220px;
+  width: 220px;
+}
+
+a,
+a:visited {
+  color: rgb(25,95,155);
+}
+
+a:hover {
+  color: rgb(218,29,54);
 }
